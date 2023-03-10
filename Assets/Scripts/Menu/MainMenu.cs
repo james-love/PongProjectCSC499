@@ -51,6 +51,49 @@ public class MainMenu : MonoBehaviour
             startMenu.rootVisualElement.Query<VisualElement>("GameMode").Children<VisualElement>("Selector"),
             MenuData.GameModeDescription);
 
-        modeControl.OnValueChanged += state.GameModeChanged;
+        modeControl.OnValueChanged += GameModeChanged;
+
+        SelectorWithDisplay<Powerups> powerupControl = new(
+            startMenu.rootVisualElement.Query<VisualElement>("Powerups").Children<VisualElement>("Selector"),
+            MenuData.PowerupDescription);
+
+        powerupControl.OnValueChanged += state.PowerupChanged;
+
+        Button start = startMenu.rootVisualElement.Query<Button>("Play");
+        start.clicked -= Play;
+        start.clicked += Play;
+    }
+
+    private void GameModeChanged(GameMode newVal)
+    {
+        state.GameModeChanged(newVal);
+
+        VisualElement score = startMenu.rootVisualElement.Query<VisualElement>("Score");
+        SliderInt slider = score.Query<SliderInt>("Slider");
+        Label text = score.Query<Label>("Text");
+
+        if (newVal == GameMode.Score)
+        {
+            score.style.visibility = Visibility.Visible;
+
+            slider.value = slider.lowValue;
+            text.text = slider.lowValue.ToString();
+
+            slider.RegisterValueChangedCallback(x =>
+            {
+                text.text = x.newValue.ToString();
+
+                state.ScoreChanged(x.newValue);
+            });
+        }
+        else
+        {
+            score.style.visibility = Visibility.Hidden;
+        }
+    }
+
+    private void Play()
+    {
+        state.LoadLevel(1);
     }
 }

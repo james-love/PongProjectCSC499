@@ -1,15 +1,18 @@
 .container {
-    color: rgba(56, 56, 56, 255);
+    color: rgb(56, 56, 56);
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 80px;
+    padding-top: 150px;
     padding-bottom: 80px;
-    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 255);
 }
 
 .settings-label {
     font-size: 100px;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .selector {
@@ -32,13 +35,12 @@
 }
 
 .display {
-    background-color: rgba(137, 129, 129, 255);
-    color: rgba(0, 0, 0, 255);
+    background-color: rgb(137, 129, 129);
+    color: rgb(0, 0, 0);
     font-size: 70px;
     align-items: center;
     justify-content: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 415px;
 }
 
 .control {
@@ -63,4 +65,43 @@
     font-size: 75px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.column {
+    width: 50%;
+}
+
+.slider {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 615px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.slider #unity-dragger {
+    margin-top: -50px;
+    height: 100px;
+    width: 20px;
+}
+
+.slider #unity-tracker {
+}
+
+.slider #Slider {
+    width: 90%;
+}
+
+.slider #Text {
+    background-color: rgb(137, 129, 129);
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    width: 15%;
+    -unity-text-align: middle-center;
+    height: 100px;
+}
+
+.slider #unity-drag-container {
+    height: 100px;
 }

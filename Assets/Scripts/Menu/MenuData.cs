@@ -20,6 +20,12 @@ public enum GameMode
     Score,
 }
 
+public enum Powerups
+{
+    Enable,
+    Disable,
+}
+
 public static class MenuData
 {
     public static readonly Dictionary<Theme, string> ThemeDescription = new()
@@ -40,5 +46,11 @@ public static class MenuData
     {
         { GameMode.Endless, "Endless" },
         { GameMode.Score, "To Score" },
+    };
+
+    public static readonly Dictionary<Powerups, string> PowerupDescription = new()
+    {
+        { Powerups.Enable, "Enable" },
+        { Powerups.Disable, "Disable" },
     };
 }

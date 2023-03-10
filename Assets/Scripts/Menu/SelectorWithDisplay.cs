@@ -10,7 +10,7 @@ public class SelectorWithDisplay<T> : Selector<T>
     public SelectorWithDisplay(VisualElement selector, Dictionary<T, string> options)
         : base(selector, options)
     {
-        this.display = selector.Q<Label>("Display");
+        this.display = selector.Q<Label>("Text");
         this.UpdateDisplay();
     }
 
