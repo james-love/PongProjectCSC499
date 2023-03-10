@@ -22,7 +22,7 @@ public enum GameMode
 
 public static class MenuData
 {
-    public static Dictionary<Theme, string> ThemeDescription = new()
+    public static readonly Dictionary<Theme, string> ThemeDescription = new()
     {
         { Theme.Classic, "Classic" },
         { Theme.Soccer, "Soccer" },
@@ -30,15 +30,15 @@ public static class MenuData
         { Theme.Music, "Music" },
     };
 
-    public static Dictionary<Players, string> PlayersDescription = new()
+    public static readonly Dictionary<Players, string> PlayersDescription = new()
     {
         { Players.OnePlayer, "One Player" },
         { Players.TwoPlayer, "Two Player" },
     };
 
-    public static Dictionary<GameMode, string> GameModeDescription = new()
+    public static readonly Dictionary<GameMode, string> GameModeDescription = new()
     {
         { GameMode.Endless, "Endless" },
-        { GameMode.Score, "To Score" }
+        { GameMode.Score, "To Score" },
     };
 }

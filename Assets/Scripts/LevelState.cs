@@ -1,23 +1,16 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class LevelState : MonoBehaviour
 {
-    [SerializeField] private Animator _transition;
-    [SerializeField] private GameObject _loadingScreen;
+    [SerializeField] private Animator transition;
+    [SerializeField] private GameObject loadingScreen;
     public bool Loading { get; private set; }
-
-    public Theme Theme;
-    public Players Players;
-    public GameMode Mode;
-    public int Score;
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    public Theme Theme { get; private set; }
+    public Players Players { get; private set; }
+    public GameMode Mode { get; private set; }
+    public int Score { get; private set; }
 
     public void ThemeChanged(Theme newValue)
     {
@@ -44,14 +37,19 @@ public class LevelState : MonoBehaviour
         StartCoroutine(LoadAsync(levelIndex));
     }
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     private IEnumerator LoadAsync(int levelIndex)
     {
         Loading = true;
         Time.timeScale = 0;
-        _transition.SetTrigger("Start");
+        transition.SetTrigger("Start");
         yield return new WaitUntil(AnimationFinished);
 
-        _loadingScreen.SetActive(true);
+        loadingScreen.SetActive(true);
 
         AsyncOperation operation = SceneManager.LoadSceneAsync(levelIndex);
         while (!operation.isDone)
@@ -61,16 +59,16 @@ public class LevelState : MonoBehaviour
 
         // TODO: use the state vals here
 
-        _loadingScreen.SetActive(false);
+        loadingScreen.SetActive(false);
 
-        _transition.SetTrigger("Loaded");
+        transition.SetTrigger("Loaded");
         Loading = false;
         Time.timeScale = 1;
     }
 
     private bool AnimationFinished()
     {
-        return _transition.GetCurrentAnimatorStateInfo(0).IsName("Wipe_Start") &&
-            _transition.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1;
+        return transition.GetCurrentAnimatorStateInfo(0).IsName("Wipe_Start") &&
+            transition.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1;
     }
 }
