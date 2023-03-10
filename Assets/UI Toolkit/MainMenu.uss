@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(56, 56, 56, 255);
+}
+
+.title {
+    font-size: 300px;
+    padding-bottom: 36px;
+    color: rgba(255, 255, 255, 255);
+}
+
+.button {
+    font-size: 79px;
+    width: 550px;
+    margin-bottom: 10px;
+}
