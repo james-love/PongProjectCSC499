@@ -21,13 +21,26 @@
 
 .rebind #Rebind {
     width: 300px;
-    font-size: 70px;
+    font-size: 50px;
     height: 100px;
-    color: rgba(0, 0, 0, 255);
+    color: rgb(0, 0, 0);
 }
 
 .rebind #Reset {
     width: 100px;
     height: 100px;
     background-image: url('project://database/Assets/UI/ControlsMenu/reset.png?fileID=2800000&guid=7e705867481a3804e9420d9341396f16&type=3#reset');
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overlay #Text {
+    font-size: 140px;
+    color: rgba(0, 0, 0, 255);
 }

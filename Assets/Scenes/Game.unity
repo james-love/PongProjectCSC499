@@ -499,36 +499,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 80b81f0c-7079-460c-b035-838f37dad55f
-    m_ActionName: SinglePlayer/Move[/Keyboard/s,/Keyboard/w]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 651123510}
-        m_TargetAssemblyTypeName: MovePaddle, PongProject
-        m_MethodName: Move
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 651123510}
-        m_TargetAssemblyTypeName: MovePaddle, PongProject
-        m_MethodName: Stop
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_ActionId: 1cca0200-a9e4-4068-b1a5-04c02d202131
-    m_ActionName: TwoPlayer/LeftPlayerMove[/Keyboard/s,/Keyboard/w]
+    m_ActionName: Players/LeftPlayerMove[/Keyboard/s,/Keyboard/w]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 965305499}
@@ -556,9 +528,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: c8764e59-22cf-4c50-abbd-7a1dcfe18790
-    m_ActionName: TwoPlayer/RightPlayerMove[/Keyboard/downArrow,/Keyboard/upArrow]
+    m_ActionName: Players/RightPlayerMove[/Keyboard/downArrow,/Keyboard/upArrow]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: SinglePlayer
+  m_DefaultActionMap: Players
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

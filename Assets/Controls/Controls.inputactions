@@ -2,57 +2,7 @@
     "name": "Controls",
     "maps": [
         {
-            "name": "SinglePlayer",
-            "id": "9fd26f37-e625-4073-9688-586f36512658",
-            "actions": [
-                {
-                    "name": "Move",
-                    "type": "Value",
-                    "id": "80b81f0c-7079-460c-b035-838f37dad55f",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "Up/Down",
-                    "id": "a96a28f6-7cab-4a41-a82f-ca483d758ea0",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "35588f82-0612-41c8-8fb4-ffea1bf5eb74",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "89740205-9247-4ba7-b223-be6e98333100",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                }
-            ]
-        },
-        {
-            "name": "TwoPlayer",
+            "name": "Players",
             "id": "8cb12430-8460-4903-b6bf-84b502a0e336",
             "actions": [
                 {

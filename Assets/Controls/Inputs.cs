@@ -25,13 +25,13 @@ public class Inputs : MonoBehaviour
         PlayerInput input = GetComponent<PlayerInput>();
         if (state.Players == Players.OnePlayer)
         {
-            input.actions.FindActionMap("SinglePlayer").Enable();
-            input.actions.FindActionMap("TwoPlayer").Disable();
+            input.actions.FindAction("Players/LeftPlayerMove").Enable();
+            input.actions.FindAction("Players/RightPlayerMove").Disable();
         }
         else
         {
-            input.actions.FindActionMap("SinglePlayer").Disable();
-            input.actions.FindActionMap("TwoPlayer").Enable();
+            input.actions.FindAction("Players/LeftPlayerMove").Enable();
+            input.actions.FindAction("Players/RightPlayerMove").Enable();
         }
     }
 }

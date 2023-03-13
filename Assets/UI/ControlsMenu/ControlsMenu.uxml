@@ -34,4 +34,7 @@
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:Button display-tooltip-when-elided="true" name="Back" class="back button" />
+    <ui:VisualElement name="Overlay" class="overlay" style="align-items: center; justify-content: center; background-color: rgba(103, 103, 103, 0.65); display: none;">
+        <ui:Label text="Waiting for input..." display-tooltip-when-elided="true" name="Text" />
+    </ui:VisualElement>
 </ui:UXML>
