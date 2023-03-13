@@ -9,6 +9,8 @@ public class Selector<T>
     {
         this.Options = options;
         this.Value = default;
+        selector.Q<Button>("Left").RegisterCallback<NavigationSubmitEvent>(_ => this.CycleValue(-1));
+        selector.Q<Button>("Right").RegisterCallback<NavigationSubmitEvent>(_ => this.CycleValue(1));
         selector.Q<Button>("Left").RegisterCallback<ClickEvent>(_ => this.CycleValue(-1));
         selector.Q<Button>("Right").RegisterCallback<ClickEvent>(_ => this.CycleValue(1));
     }

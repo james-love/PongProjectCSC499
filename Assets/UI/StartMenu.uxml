@@ -1,0 +1,59 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StartMenu.uss?fileID=7433441132597879392&amp;guid=7406801ee24a3454b8cefd6907d2c63e&amp;type=3#StartMenu" />
+    <Style src="project://database/Assets/UI/Shared.uss?fileID=7433441132597879392&amp;guid=cb6779ee601200d4b8369d036a657663&amp;type=3#Shared" />
+    <ui:VisualElement name="Container" class="container">
+        <ui:VisualElement name="LeftColumn" class="column">
+            <ui:VisualElement name="Theme" class="control" style="font-size: 34px;">
+                <ui:Label text="Theme" display-tooltip-when-elided="true" name="ThemeLabel" class="settings-label" />
+                <ui:VisualElement name="Selector" class="selector">
+                    <ui:Button display-tooltip-when-elided="true" name="Left" tabindex="1" class="selector-button left button" />
+                    <ui:VisualElement name="Display" class="display">
+                        <ui:Label text="Test Value" display-tooltip-when-elided="true" name="Text" />
+                    </ui:VisualElement>
+                    <ui:Button display-tooltip-when-elided="true" name="Right" tabindex="2" class="selector-button right button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="GameMode" class="control" style="font-size: 34px;">
+                <ui:Label text="Game Mode" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                <ui:VisualElement name="Selector" class="selector">
+                    <ui:Button display-tooltip-when-elided="true" name="Left" tabindex="5" class="selector-button left button" />
+                    <ui:VisualElement name="Display" class="display">
+                        <ui:Label text="Test Value" display-tooltip-when-elided="true" name="Text" />
+                    </ui:VisualElement>
+                    <ui:Button display-tooltip-when-elided="true" name="Right" tabindex="6" class="selector-button right button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Score" style="font-size: 34px; visibility: hidden;">
+                <ui:Label text="Score To Win" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                <ui:VisualElement name="ScoreSlider" class="slider">
+                    <ui:SliderInt picking-mode="Ignore" value="7" high-value="50" name="Slider" low-value="7" tabindex="9" />
+                    <ui:Label text="99" display-tooltip-when-elided="true" name="Text" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightColumn" class="column">
+            <ui:VisualElement name="PlayerAmount" class="control" style="font-size: 34px;">
+                <ui:Label text="Players" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                <ui:VisualElement name="Selector" class="selector">
+                    <ui:Button display-tooltip-when-elided="true" name="Left" tabindex="3" class="selector-button left button" />
+                    <ui:VisualElement name="Display" class="display">
+                        <ui:Label text="Test Value" display-tooltip-when-elided="true" name="Text" />
+                    </ui:VisualElement>
+                    <ui:Button display-tooltip-when-elided="true" name="Right" tabindex="4" class="selector-button right button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Powerups" class="control" style="font-size: 34px;">
+                <ui:Label text="Powerups" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                <ui:VisualElement name="Selector" class="selector">
+                    <ui:Button display-tooltip-when-elided="true" name="Left" tabindex="7" class="selector-button left button" />
+                    <ui:VisualElement name="Display" class="display">
+                        <ui:Label text="Test Value" display-tooltip-when-elided="true" name="Text" />
+                    </ui:VisualElement>
+                    <ui:Button display-tooltip-when-elided="true" name="Right" tabindex="8" class="selector-button right button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button display-tooltip-when-elided="true" name="Back" class="back button" />
+        <ui:Button text="Play" display-tooltip-when-elided="true" name="Play" tabindex="10" class="play button" />
+    </ui:VisualElement>
+</ui:UXML>
