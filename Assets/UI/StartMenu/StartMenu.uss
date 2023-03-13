@@ -6,11 +6,6 @@
     flex-direction: row;
 }
 
-.settings-label {
-    font-size: 100px;
-    color: rgb(255, 255, 255);
-}
-
 .selector {
     flex-direction: row;
     margin-left: 60px;
@@ -23,14 +18,6 @@
     -unity-background-image-tint-color: rgb(0, 0, 0);
 }
 
-.left {
-    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=1169890249420208065&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-left');
-}
-
-.right {
-    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=-4521532143779581420&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-right');
-}
-
 .display {
     background-color: rgb(137, 129, 129);
     color: rgb(0, 0, 0);
@@ -38,22 +25,6 @@
     align-items: center;
     justify-content: center;
     width: 415px;
-}
-
-.control {
-    margin-bottom: 20px;
-}
-
-.back {
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    width: 100px;
-    height: 100px;
-    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=1169890249420208065&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-left');
-    align-items: center;
-    justify-content: center;
-    -unity-background-image-tint-color: rgb(0, 0, 0);
 }
 
 .play {
@@ -66,10 +37,6 @@
     color: rgb(0, 0, 0);
     width: 200px;
     height: 100px;
-}
-
-.column {
-    width: 50%;
 }
 
 .slider {
