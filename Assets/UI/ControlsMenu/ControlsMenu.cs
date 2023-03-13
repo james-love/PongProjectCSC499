@@ -5,11 +5,11 @@ using UnityEngine.UIElements;
 public class ControlsMenu : MonoBehaviour
 {
     [SerializeField] private InputActionAsset inputs;
-    private void Awake()
+    private void Start()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 
-        VisualElement overlay = root.Q<VisualElement>("Overlay");
+        Label overlay = root.Q<Label>("Overlay");
 
         InputAction p1Move = inputs.FindAction("Players/LeftPlayerMove");
         int p1Up = p1Move.bindings.IndexOf(b => b.name == "positive");
@@ -30,5 +30,18 @@ public class ControlsMenu : MonoBehaviour
 
         VisualElement rebindPlayerTwoDown = root.Query<VisualElement>("PlayerTwo").Descendents<VisualElement>("RebindDown");
         new RebindControl(rebindPlayerTwoDown, p2Move, p2Down, overlay);
+    }
+
+    private void OnEnable()
+    {
+        string rebinds = PlayerPrefs.GetString("rebinds");
+        if (!string.IsNullOrEmpty(rebinds))
+            inputs.LoadBindingOverridesFromJson(rebinds);
+    }
+
+    private void OnDisable()
+    {
+        string rebinds = inputs.SaveBindingOverridesAsJson();
+        PlayerPrefs.SetString("rebinds", rebinds);
     }
 }

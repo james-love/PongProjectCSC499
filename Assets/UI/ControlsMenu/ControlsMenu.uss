@@ -38,9 +38,9 @@
     top: 0;
     right: 0;
     bottom: 0;
-}
-
-.overlay #Text {
     font-size: 140px;
+    -unity-text-align: middle-center;
+    background-color: rgba(140, 140, 140, 0.69);
     color: rgba(0, 0, 0, 255);
+    white-space: normal;
 }

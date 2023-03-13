@@ -1,4 +1,5 @@
-﻿using UnityEngine.InputSystem;
+﻿using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class RebindControl
@@ -7,9 +8,9 @@ public class RebindControl
     private int bindingIndex;
     private InputAction action;
     private Button rebindButton;
-    private VisualElement overlay;
+    private Label overlay;
 
-    public RebindControl(VisualElement control, InputAction action, int bindingIndex, VisualElement overlay)
+    public RebindControl(VisualElement control, InputAction action, int bindingIndex, Label overlay)
     {
         this.bindingIndex = bindingIndex;
         this.action = action;
@@ -36,6 +37,30 @@ public class RebindControl
         UpdateDisplay();
     }
 
+    private bool CheckDuplicateBinding()
+    {
+        InputBinding newBinding = action.bindings[bindingIndex];
+        foreach (InputBinding binding in action.actionMap.bindings)
+        {
+            if (binding.id == newBinding.id)
+                continue;
+            if (binding.effectivePath == newBinding.effectivePath)
+                return true;
+        }
+
+        return false;
+    }
+
+    private void Overlay(bool show = true, string text = null)
+    {
+        if (!string.IsNullOrEmpty(text))
+            overlay.text = text;
+        if (show)
+            overlay.style.display = DisplayStyle.Flex;
+        else
+            overlay.style.display = DisplayStyle.None;
+    }
+
     private void PerformInteractiveRebind()
     {
         rebindOperation?.Cancel();
@@ -52,17 +77,26 @@ public class RebindControl
                 {
                     CleanUp();
                     UpdateDisplay();
-                    overlay.style.display = DisplayStyle.None;
+                    Overlay(false, "Waiting for input...");
                 })
             .OnComplete(
                 operation =>
                 {
+                    if (CheckDuplicateBinding())
+                    {
+                        Overlay(true, "Key already in use. Try again.");
+                        action.RemoveBindingOverride(bindingIndex);
+                        CleanUp();
+                        PerformInteractiveRebind();
+                        return;
+                    }
+
                     CleanUp();
                     UpdateDisplay();
-                    overlay.style.display = DisplayStyle.None;
+                    Overlay(false, "Waiting for input...");
                 });
 
-        overlay.style.display = DisplayStyle.Flex;
+        Overlay();
 
         rebindOperation.Start();
     }
