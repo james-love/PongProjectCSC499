@@ -1,0 +1,108 @@
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    flex-direction: row;
+}
+
+.settings-label {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.selector {
+    flex-direction: row;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.selector-button {
+    width: 100px;
+    height: 100px;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}
+
+.left {
+    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=1169890249420208065&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-left');
+}
+
+.right {
+    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=-4521532143779581420&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-right');
+}
+
+.display {
+    background-color: rgb(137, 129, 129);
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    align-items: center;
+    justify-content: center;
+    width: 415px;
+}
+
+.control {
+    margin-bottom: 20px;
+}
+
+.back {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=1169890249420208065&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-left');
+    align-items: center;
+    justify-content: center;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}
+
+.play {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 100px;
+}
+
+.column {
+    width: 50%;
+}
+
+.slider {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 615px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.slider #unity-dragger {
+    margin-top: -50px;
+    height: 100px;
+    width: 20px;
+}
+
+.slider #unity-tracker {
+}
+
+.slider #Slider {
+    width: 85%;
+}
+
+.slider #Text {
+    background-color: rgb(137, 129, 129);
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    width: 15%;
+    -unity-text-align: middle-center;
+    height: 100px;
+}
+
+.slider #unity-drag-container {
+    height: 100px;
+}

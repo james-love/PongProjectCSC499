@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ControlsMenu/ControlsMenu.uss?fileID=7433441132597879392&amp;guid=4fc7ee0b5965af7489a527aa3fe467a0&amp;type=3#ControlsMenu" />
+    <Style src="project://database/Assets/UI/Shared.uss?fileID=7433441132597879392&amp;guid=cb6779ee601200d4b8369d036a657663&amp;type=3#Shared" />
+    <ui:VisualElement name="Container" class="container">
+        <ui:VisualElement name="LeftColumn" class="column">
+            <ui:VisualElement name="PlayerOne" class="control" style="font-size: 34px;">
+                <ui:Label text="Player One" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                <ui:VisualElement name="RebindUp" class="rebind">
+                    <ui:Label text="Up" display-tooltip-when-elided="true" name="Label" />
+                    <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="1" class="button" />
+                    <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="2" class="button" />
+                </ui:VisualElement>
+                <ui:VisualElement name="RebindDown" class="rebind">
+                    <ui:Label text="Down" display-tooltip-when-elided="true" name="Label" />
+                    <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="3" class="button" />
+                    <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="4" class="button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightColumn" class="column">
+            <ui:VisualElement name="PlayerTwo" class="control" style="font-size: 34px;">
+                <ui:Label text="Player Two" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                <ui:VisualElement name="RebindUp" class="rebind">
+                    <ui:Label text="Up" display-tooltip-when-elided="true" name="Label" />
+                    <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="5" class="button" />
+                    <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="6" class="button" />
+                </ui:VisualElement>
+                <ui:VisualElement name="RebindDown" class="rebind">
+                    <ui:Label text="Down" display-tooltip-when-elided="true" name="Label" />
+                    <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="7" class="button" />
+                    <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="8" class="button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button display-tooltip-when-elided="true" name="Back" class="back button" />
+</ui:UXML>
