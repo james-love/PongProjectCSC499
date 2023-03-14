@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelState : MonoBehaviour
 {
+    public static LevelState Instance;
     [SerializeField] private Animator transition;
     public bool Loading { get; private set; }
     public Theme Theme { get; private set; }
@@ -44,7 +45,15 @@ public class LevelState : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private IEnumerator LoadAsync(int levelIndex)
@@ -60,7 +69,7 @@ public class LevelState : MonoBehaviour
             yield return null;
         }
 
-        // TODO: use the state vals here
+        // TODO: use the state vals here, maybe
 
         transition.SetTrigger("Loaded");
         Loading = false;

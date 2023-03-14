@@ -3,9 +3,8 @@ using UnityEngine.UIElements;
 
 public class StartMenu : MonoBehaviour
 {
-    [SerializeField] private LevelState state;
     private UIDocument startMenu;
-    private void Awake()
+    private void Start()
     {
         startMenu = GetComponent<UIDocument>();
 
@@ -13,13 +12,13 @@ public class StartMenu : MonoBehaviour
             startMenu.rootVisualElement.Query<VisualElement>("Theme").Children<VisualElement>("Selector"),
             MenuData.ThemeDescription);
 
-        themeControl.OnValueChanged += state.ThemeChanged;
+        themeControl.OnValueChanged += LevelState.Instance.ThemeChanged;
 
         SelectorWithDisplay<Players> playersControl = new(
             startMenu.rootVisualElement.Query<VisualElement>("PlayerAmount").Children<VisualElement>("Selector"),
             MenuData.PlayersDescription);
 
-        playersControl.OnValueChanged += state.PlayersChanged;
+        playersControl.OnValueChanged += LevelState.Instance.PlayersChanged;
 
         SelectorWithDisplay<GameMode> modeControl = new(
             startMenu.rootVisualElement.Query<VisualElement>("GameMode").Children<VisualElement>("Selector"),
@@ -31,7 +30,7 @@ public class StartMenu : MonoBehaviour
             startMenu.rootVisualElement.Query<VisualElement>("Powerups").Children<VisualElement>("Selector"),
             MenuData.PowerupDescription);
 
-        powerupControl.OnValueChanged += state.PowerupChanged;
+        powerupControl.OnValueChanged += LevelState.Instance.PowerupChanged;
 
         SliderInt scoreSlider = startMenu.rootVisualElement.Query<VisualElement>("Score").Descendents<SliderInt>("Slider");
         Label scoreText = startMenu.rootVisualElement.Query<VisualElement>("Score").Descendents<Label>("Text");
@@ -41,7 +40,7 @@ public class StartMenu : MonoBehaviour
         {
             scoreText.text = x.newValue.ToString();
 
-            state.ScoreChanged(x.newValue);
+            LevelState.Instance.ScoreChanged(x.newValue);
         });
 
         scoreSlider.RegisterCallback<FocusInEvent>(x =>
@@ -61,7 +60,7 @@ public class StartMenu : MonoBehaviour
 
     private void GameModeChanged(GameMode newVal)
     {
-        state.GameModeChanged(newVal);
+        LevelState.Instance.GameModeChanged(newVal);
 
         VisualElement score = startMenu.rootVisualElement.Query<VisualElement>("Score");
         SliderInt slider = score.Query<SliderInt>("Slider");
@@ -73,7 +72,7 @@ public class StartMenu : MonoBehaviour
 
             slider.value = slider.lowValue;
             text.text = slider.lowValue.ToString();
-            state.ScoreChanged(slider.lowValue);
+            LevelState.Instance.ScoreChanged(slider.lowValue);
         }
         else
         {
@@ -83,6 +82,6 @@ public class StartMenu : MonoBehaviour
 
     private void Play()
     {
-        state.LoadLevel(1);
+        LevelState.Instance.LoadLevel(1);
     }
 }
