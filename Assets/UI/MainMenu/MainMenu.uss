@@ -1,6 +1,7 @@
 .container {
     align-items: center;
     justify-content: center;
+    -unity-font: url('project://database/Assets/UI/GraphicsAndFont/Mont-HeavyDEMO.otf?fileID=12800000&guid=66d1f5d1d3213054b862bc2e6cf11908&type=3#Mont-HeavyDEMO');
 }
 
 .title {
@@ -14,5 +15,5 @@
     width: 550px;
     height: 118px;
     margin-bottom: 10px;
-    color: rgba(0, 0, 0, 255);
+    color: rgb(0, 0, 0);
 }

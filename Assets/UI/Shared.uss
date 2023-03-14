@@ -16,14 +16,6 @@
     border-bottom-width: 5px;
 }
 
-.left {
-    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=1169890249420208065&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-left');
-}
-
-.right {
-    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=-4521532143779581420&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-right');
-}
-
 .settings-label {
     font-size: 100px;
     color: rgb(255, 255, 255);
@@ -40,16 +32,4 @@
 
 .control {
     margin-bottom: 20px;
-}
-
-.back {
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    -unity-background-image-tint-color: rgb(0, 0, 0);
-    background-image: url('project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=1169890249420208065&guid=4307cf8f3df0f45478841093c4cf659b&type=3#arrow-left');
 }

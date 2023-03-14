@@ -4,6 +4,7 @@
     padding-top: 245px;
     padding-bottom: 80px;
     flex-direction: row;
+    -unity-font: url('project://database/Assets/UI/GraphicsAndFont/Mont-HeavyDEMO.otf?fileID=12800000&guid=66d1f5d1d3213054b862bc2e6cf11908&type=3#Mont-HeavyDEMO');
 }
 
 .rebind {
@@ -29,7 +30,7 @@
 .rebind #Reset {
     width: 100px;
     height: 100px;
-    background-image: url('project://database/Assets/UI/ControlsMenu/reset.png?fileID=2800000&guid=7e705867481a3804e9420d9341396f16&type=3#reset');
+    background-image: url('project://database/Assets/UI/GraphicsAndFont/reset.png?fileID=2800000&guid=7e705867481a3804e9420d9341396f16&type=3#reset');
 }
 
 .overlay {
@@ -41,6 +42,19 @@
     font-size: 140px;
     -unity-text-align: middle-center;
     background-color: rgba(140, 140, 140, 0.69);
-    color: rgba(0, 0, 0, 255);
+    color: rgb(0, 0, 0);
     white-space: normal;
+}
+
+.back {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    background-image: url('project://database/Assets/UI/GraphicsAndFont/arrow.png?fileID=2800000&guid=0390bb330e321d844a24c53235879170&type=3#arrow');
+    rotate: 180deg;
 }

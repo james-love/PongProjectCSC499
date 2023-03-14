@@ -4,6 +4,7 @@
     padding-top: 150px;
     padding-bottom: 80px;
     flex-direction: row;
+    -unity-font: url('project://database/Assets/UI/GraphicsAndFont/Mont-HeavyDEMO.otf?fileID=12800000&guid=66d1f5d1d3213054b862bc2e6cf11908&type=3#Mont-HeavyDEMO');
 }
 
 .selector {
@@ -25,6 +26,7 @@
     align-items: center;
     justify-content: center;
     width: 415px;
+    height: 100px;
 }
 
 .play {
@@ -72,4 +74,26 @@
 
 .slider #unity-drag-container {
     height: 100px;
+}
+
+.left {
+    background-image: url('project://database/Assets/UI/GraphicsAndFont/arrow.png?fileID=2800000&guid=0390bb330e321d844a24c53235879170&type=3#arrow');
+    rotate: 180deg;
+}
+
+.right {
+    background-image: url('project://database/Assets/UI/GraphicsAndFont/arrow.png?fileID=2800000&guid=0390bb330e321d844a24c53235879170&type=3#arrow');
+}
+
+.back {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    background-image: url('project://database/Assets/UI/GraphicsAndFont/arrow.png?fileID=2800000&guid=0390bb330e321d844a24c53235879170&type=3#arrow');
+    rotate: 180deg;
 }
