@@ -7,11 +7,11 @@ public class LevelState : MonoBehaviour
     public static LevelState Instance;
     [SerializeField] private Animator transition;
     public bool Loading { get; private set; }
-    public Theme Theme { get; private set; }
-    public Players Players { get; private set; }
-    public GameMode Mode { get; private set; }
-    public int Score { get; private set; }
-    public bool Powerup { get; private set; }
+    public Theme Theme { get; private set; } = Theme.Classic;
+    public Players Players { get; private set; } = Players.OnePlayer;
+    public GameMode Mode { get; private set; } = GameMode.Endless;
+    public int Score { get; private set; } = 7;
+    public bool Powerup { get; private set; } = true;
 
     public void ThemeChanged(Theme newValue)
     {

@@ -26,15 +26,14 @@ public class PowerupSpawner : MonoBehaviour
 
     private void Start()
     {
-        SpawnPowerup();
+        if (LevelState.Instance.Powerup)
+            SpawnPowerup();
     }
 
     public void SpawnPowerup(GameObject oldPowerup = null)
     {
         if (oldPowerup != null)
         {
-            Powerup component = oldPowerup.GetComponent<Powerup>();
-            print($"Hit a powerup with type {component.PowerupType}");
             Destroy(oldPowerup);
         }
 

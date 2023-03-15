@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    private readonly float speed = 4;
+    public float Speed { get; set; } = 4;
+    public void UnoReverse() => direction.x *= -1;
+
     private Vector2 direction;
+    private GameObject lastHitPaddle;
 
     private void Start()
     {
@@ -13,7 +16,7 @@ public class Ball : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(speed * Time.deltaTime * direction);
+        transform.Translate(Speed * Time.deltaTime * direction);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -23,6 +26,7 @@ public class Ball : MonoBehaviour
             case "Paddle":
                 SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.PaddleHit);
                 direction.x *= -1;
+                lastHitPaddle = collision.gameObject;
                 break;
             case "Border":
                 SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.WallHit);
@@ -32,10 +36,14 @@ public class Ball : MonoBehaviour
                 SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.Goal);
                 BallSpawner.Instance.SpawnBall(gameObject);
                 break;
-            // TODO: Maybe move logic to Powerup.cs and remove this (and the tag)
             case "Powerup":
-                SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.PowerupPickup);
-                PowerupSpawner.Instance.SpawnPowerup(collision.gameObject);
+                if (lastHitPaddle != null)
+                {
+                    SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.PowerupPickup);
+                    PowerupEffect.GenerateEffect(collision.gameObject.GetComponent<Powerup>().PowerupType, gameObject, lastHitPaddle);
+                    PowerupSpawner.Instance.SpawnPowerup(collision.gameObject);
+                }
+
                 break;
             default:
                 break;

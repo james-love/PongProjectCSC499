@@ -25,7 +25,6 @@ public class Paddle : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //transform.Translate(direction * speed * Time.deltaTime * Vector3.up);
         rigidBody.MovePosition(rigidBody.position + (direction * speed * Time.deltaTime * Vector2.up));
     }
 }
