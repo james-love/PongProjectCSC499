@@ -1,10 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20Toolkit/MainMenu.uss?fileID=7433441132597879392&amp;guid=61c7e142157dd3a4b8b5a109517e4962&amp;type=3#MainMenu" />
-    <Style src="project://database/Assets/UI%20Toolkit/Shared.uss?fileID=7433441132597879392&amp;guid=cb6779ee601200d4b8369d036a657663&amp;type=3#Shared" />
-    <ui:VisualElement name="Container" class="container">
-        <ui:Label text="Pong" display-tooltip-when-elided="true" name="Title" class="title" />
-        <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="button" />
-        <ui:Button text="Controls" display-tooltip-when-elided="true" name="Controls" class="button" />
-        <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" />
+    <Style src="project://database/Assets/UI/MainMenu/MainMenu.uss?fileID=7433441132597879392&amp;guid=61c7e142157dd3a4b8b5a109517e4962&amp;type=3#MainMenu" />
+    <Style src="project://database/Assets/UI/Shared.uss?fileID=7433441132597879392&amp;guid=cb6779ee601200d4b8369d036a657663&amp;type=3#Shared" />
+    <ui:VisualElement name="Container" class="container" style="background-color: rgb(31, 20, 18);">
+        <ui:VisualElement name="Container2" class="container" style="background-color: rgb(255, 225, 78); height: 815px; width: 1054px;">
+            <ui:Label text="Pong" display-tooltip-when-elided="true" name="Title" class="title" style="background-color: rgba(0, 0, 0, 0); color: rgb(0, 0, 0);" />
+            <ui:VisualElement name="Container3" class="container" style="background-color: rgb(82, 50, 27); height: 427px; width: 664px;">
+                <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                <ui:Button text="Controls" display-tooltip-when-elided="true" name="Controls" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
