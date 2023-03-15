@@ -33,8 +33,8 @@ public class PowerupSpawner : MonoBehaviour
     {
         if (oldPowerup != null)
         {
-            Powerup component = oldPowerup.GetComponent<Powerup>();
-            print($"Hit a powerup with type {component.PowerupType}");
+            // Powerup component = oldPowerup.GetComponent<Powerup>();
+            // print($"Hit a powerup with type {component.PowerupType}");
             Destroy(oldPowerup);
         }
 

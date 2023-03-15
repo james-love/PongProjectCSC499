@@ -8,6 +8,8 @@ TagManager:
   - Border
   - Goal
   - Powerup
+  - LeftPaddle
+  - RightPaddle
   layers:
   - Default
   - TransparentFX
