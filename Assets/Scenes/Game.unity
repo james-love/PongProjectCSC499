@@ -221,7 +221,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741645973}
         m_TargetAssemblyTypeName: Score, PongProject
-        m_MethodName: LeftScore
+        m_MethodName: RightScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1092,7 +1092,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1741645973}
         m_TargetAssemblyTypeName: Score, PongProject
-        m_MethodName: RightScore
+        m_MethodName: LeftScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1426,7 +1426,7 @@ MonoBehaviour:
     Music: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
     PowerupPickup: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
   - Theme: 1
-    Background: {fileID: 158591020, guid: 82337a8486a954d409a99d945323a5c7, type: 3}
+    Background: {fileID: 35089469, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
     Ball: {fileID: 1046554316, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
     LeftPaddle: {fileID: -1623160695, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
     RightPaddle: {fileID: -616528020, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
@@ -1464,9 +1464,9 @@ MonoBehaviour:
     RightPaddle: {fileID: -1144974100, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     FastballPowerup: {fileID: 378374889, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     SlowballPowerup: {fileID: 613196369, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
-    InvisiballPowerup: {fileID: 595286344, guid: 82337a8486a954d409a99d945323a5c7, type: 3}
+    InvisiballPowerup: {fileID: 855649467, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     UnoReversePowerup: {fileID: -934528105, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
-    GrowPaddlePowerup: {fileID: 45904246, guid: 82337a8486a954d409a99d945323a5c7, type: 3}
+    GrowPaddlePowerup: {fileID: -357867440, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     ShrinkPaddlePowerup: {fileID: -160999919, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     PaddleHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
     Goal: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
