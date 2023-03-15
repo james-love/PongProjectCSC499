@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 82337a8486a954d409a99d945323a5c7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: c_background
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 968
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece8e40c8ccbf4e439ce51bed1571245
+      internalID: 158591020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c_ball
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 785
+        width: 66
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43d7896ec885324e83ad483842c93aa
+      internalID: -219509482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c_paddle
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 654
+        width: 41
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3aff15df2e5c394c90587ad61d0b13b
+      internalID: -1018131773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c_grow
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 670
+        width: 35
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7635ec2468e43234ea37ab44d3706aa0
+      internalID: 45904246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c_shrink
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 671
+        width: 35
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3434b16b4e0f190458a892a68d87ca7a
+      internalID: 1599515746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c_invisiball
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 641
+        width: 178
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f8760a2576cce4b99c8ab54c9727bd
+      internalID: 595286344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c_slow
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 411
+        width: 106
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3df0fee74aa3b4f937e0c5a56dd69a
+      internalID: -592539978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c_fast
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 417
+        width: 112
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8181ac8afb69e1f4eb706e796f405b87
+      internalID: -739812649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c_reverse
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 419
+        width: 156
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c0a9518a8fae94ba83e84b2d3f32d6
+      internalID: -2102977344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ClassicTheme_0: 288071481
+      ClassicTheme_10: -2050758033
+      ClassicTheme_11: -1200775165
+      ClassicTheme_12: 1507425932
+      ClassicTheme_13: -539167184
+      ClassicTheme_14: 1494494499
+      ClassicTheme_15: 873844785
+      ClassicTheme_16: -264861027
+      ClassicTheme_17: -876873964
+      ClassicTheme_18: 737448821
+      ClassicTheme_19: 760338466
+      ClassicTheme_20: -1009227141
+      ClassicTheme_21: -1541337629
+      ClassicTheme_22: -408583889
+      ClassicTheme_23: 755850920
+      ClassicTheme_24: -17866653
+      ClassicTheme_25: -112855052
+      ClassicTheme_26: 1188699293
+      ClassicTheme_28: -1788511376
+      ClassicTheme_29: 825320133
+      ClassicTheme_3: 640442302
+      ClassicTheme_30: -1952885983
+      ClassicTheme_31: 1784562189
+      ClassicTheme_32: 296684626
+      ClassicTheme_33: -2083941246
+      ClassicTheme_34: -1803281497
+      ClassicTheme_35: -1622224680
+      ClassicTheme_36: -649671143
+      ClassicTheme_37: -955351405
+      ClassicTheme_38: 1280929386
+      ClassicTheme_39: -228439539
+      ClassicTheme_4: -705642173
+      ClassicTheme_40: 1792014279
+      ClassicTheme_41: -624578209
+      ClassicTheme_42: 1775933857
+      ClassicTheme_43: -1975611257
+      ClassicTheme_44: -687556421
+      ClassicTheme_45: 663832480
+      ClassicTheme_46: 810162447
+      ClassicTheme_47: 629386357
+      ClassicTheme_48: -1003692836
+      ClassicTheme_49: -1299201672
+      ClassicTheme_50: 1205096721
+      ClassicTheme_51: 1140255315
+      ClassicTheme_52: -22310743
+      ClassicTheme_53: -1117197671
+      ClassicTheme_54: 183265356
+      ClassicTheme_55: -400431524
+      ClassicTheme_56: 1749625453
+      ClassicTheme_57: 1974075360
+      ClassicTheme_58: 87297235
+      ClassicTheme_59: 1577854507
+      ClassicTheme_60: -675535635
+      ClassicTheme_61: -1723914586
+      ClassicTheme_62: 130435935
+      ClassicTheme_63: 874351436
+      ClassicTheme_64: -2124805958
+      ClassicTheme_65: 1983378266
+      ClassicTheme_66: 1275130186
+      ClassicTheme_67: -291677714
+      ClassicTheme_68: 1225372246
+      ClassicTheme_69: 2056964442
+      ClassicTheme_7: -112763502
+      ClassicTheme_70: 1487156978
+      ClassicTheme_71: 789901611
+      ClassicTheme_72: -135975204
+      ClassicTheme_73: 1410913777
+      ClassicTheme_74: 1796129824
+      ClassicTheme_78: -2044365909
+      ClassicTheme_8: 892317447
+      ClassicTheme_9: -331986741
+      c_background: 158591020
+      c_ball: -219509482
+      c_fast: -739812649
+      c_grow: 45904246
+      c_invisiball: 595286344
+      c_paddle: -1018131773
+      c_reverse: -2102977344
+      c_shrink: 1599515746
+      c_slow: -592539978
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

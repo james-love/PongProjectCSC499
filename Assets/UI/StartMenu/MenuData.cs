@@ -4,7 +4,7 @@ public enum Theme
 {
     Classic,
     Soccer,
-    BluRay,
+    Satisfying,
     Music,
 }
 
@@ -32,7 +32,7 @@ public static class MenuData
     {
         { Theme.Classic, "Classic" },
         { Theme.Soccer, "Soccer" },
-        { Theme.BluRay, "Blu Ray" },
+        { Theme.Satisfying, "Satisfying" },
         { Theme.Music, "Music" },
     };
 
