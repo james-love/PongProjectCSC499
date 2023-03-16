@@ -1514,10 +1514,14 @@ MonoBehaviour:
     GrowPaddlePowerup: {fileID: 45904246, guid: 82337a8486a954d409a99d945323a5c7, type: 3}
     ShrinkPaddlePowerup: {fileID: 1599515746, guid: 82337a8486a954d409a99d945323a5c7, type: 3}
     PaddleHit: {fileID: 8300000, guid: f76d2813f8c0270419461c435ca40313, type: 3}
-    Goal: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    Goal: {fileID: 8300000, guid: 14ead81ea91d914458fa996e68a58dbe, type: 3}
     WallHit: {fileID: 8300000, guid: f76d2813f8c0270419461c435ca40313, type: 3}
     Music: {fileID: 0}
     PowerupPickup: {fileID: 8300000, guid: d598e1bd6f1406546bf0ed291e0d51ac, type: 3}
+    VolumePrefab: {fileID: 916269638846029418, guid: 5b520e291f71b49c8bc0f19c3008849a, type: 3}
+    BallEffect: {fileID: 3956669497807894758, guid: cd71fc220548445e3a53cf3cad52ce29, type: 3}
+    GoalEffect: {fileID: 3382307137421335779, guid: e9a83256335344c89acf6ae91a9fc7ab, type: 3}
+    CollisionEffect: {fileID: 5984999210486670781, guid: c260b80552f024543874ecc16b0abd74, type: 3}
   - Theme: 1
     Background: {fileID: 35089469, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
     Ball: {fileID: 1046554316, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
@@ -1534,6 +1538,10 @@ MonoBehaviour:
     WallHit: {fileID: 8300000, guid: 96c67ca281a38504c85b10fe948813e6, type: 3}
     Music: {fileID: 8300000, guid: f99d5a7af57a2634bab06edd4342ec21, type: 3}
     PowerupPickup: {fileID: 8300000, guid: c307e4e71459dc2488e1dfb591df498d, type: 3}
+    VolumePrefab: {fileID: 8645984324536000433, guid: 314cc3ad49e74484e829ad02e08d68a7, type: 3}
+    BallEffect: {fileID: 3956669497807894758, guid: cd71fc220548445e3a53cf3cad52ce29, type: 3}
+    GoalEffect: {fileID: 3382307137421335779, guid: e9a83256335344c89acf6ae91a9fc7ab, type: 3}
+    CollisionEffect: {fileID: 5984999210486670781, guid: c260b80552f024543874ecc16b0abd74, type: 3}
   - Theme: 3
     Background: {fileID: -1950912366, guid: 73f8a9c2e718d6a44987296919008234, type: 3}
     Ball: {fileID: 1273901894, guid: 73f8a9c2e718d6a44987296919008234, type: 3}
@@ -1550,6 +1558,10 @@ MonoBehaviour:
     WallHit: {fileID: 8300000, guid: 9f9b9d4d19b35e54ea3af9b07720289a, type: 3}
     Music: {fileID: 8300000, guid: 9c7701c6749c2c341b001b03447ddc0e, type: 3}
     PowerupPickup: {fileID: 8300000, guid: 9dc18f8e69875a74aa6fd4c34a637e56, type: 3}
+    VolumePrefab: {fileID: 2558537544711744240, guid: dba608915d66e4897863a64200a99367, type: 3}
+    BallEffect: {fileID: 3956669497807894758, guid: cd71fc220548445e3a53cf3cad52ce29, type: 3}
+    GoalEffect: {fileID: 3382307137421335779, guid: e9a83256335344c89acf6ae91a9fc7ab, type: 3}
+    CollisionEffect: {fileID: 5984999210486670781, guid: c260b80552f024543874ecc16b0abd74, type: 3}
   - Theme: 2
     Background: {fileID: 1917532279, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     Ball: {fileID: 1142926258, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
@@ -1565,7 +1577,11 @@ MonoBehaviour:
     Goal: {fileID: 8300000, guid: c137dfc69ab880242921d6c3d62a596b, type: 3}
     WallHit: {fileID: 8300000, guid: 3347d8a2bac42874f914077ac69aa987, type: 3}
     Music: {fileID: 8300000, guid: d4c7d25724d64c54c99b8f9a88d260db, type: 3}
-    PowerupPickup: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    PowerupPickup: {fileID: 8300000, guid: 205621d8771c6ed4f80d186fb04a19b3, type: 3}
+    VolumePrefab: {fileID: 2890380974090492318, guid: 915cba3452f044435ad02bbc31a871ef, type: 3}
+    BallEffect: {fileID: 3956669497807894758, guid: cd71fc220548445e3a53cf3cad52ce29, type: 3}
+    GoalEffect: {fileID: 3382307137421335779, guid: e9a83256335344c89acf6ae91a9fc7ab, type: 3}
+    CollisionEffect: {fileID: 5984999210486670781, guid: c260b80552f024543874ecc16b0abd74, type: 3}
   background: {fileID: 1668119118}
   ball: {fileID: 551069296}
   leftPaddle: {fileID: 651123511}

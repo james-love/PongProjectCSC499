@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3956669497807894759}
   - component: {fileID: 3956669497807894752}
   m_Layer: 0
-  m_Name: BallTrail
+  m_Name: BallEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -62,6 +62,8 @@ public class ThemeManager : MonoBehaviour
             shrinkPowerup.gameObject.AddComponent<PolygonCollider2D>();
             shrinkPowerup.gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
 
+            Instantiate(themes[themeIndex].VolumePrefab, transform);
+
             SoundManager.Instance.PlayMusic(themes[themeIndex].Music);
         }
         else
@@ -91,5 +93,9 @@ public class ThemeManager : MonoBehaviour
         public AudioClip WallHit;
         public AudioClip Music;
         public AudioClip PowerupPickup;
+        public GameObject VolumePrefab;
+        public GameObject BallEffect;
+        public ParticleSystem GoalEffect;
+        public ParticleSystem CollisionEffect;
     }
 }

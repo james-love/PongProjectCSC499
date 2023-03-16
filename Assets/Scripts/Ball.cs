@@ -8,6 +8,9 @@ public class Ball : MonoBehaviour
     private Vector2 direction;
     private GameObject lastHitPaddle;
 
+    public ParticleSystem ImpactEffect { get; set; }
+    public ParticleSystem GoalEffect { get; set; }
+
     private void Start()
     {
         direction = Random.Range(0f, 1f) < 0.5 ? Vector2.left : Vector2.right;
@@ -25,15 +28,26 @@ public class Ball : MonoBehaviour
         {
             case "Paddle":
                 SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.PaddleHit);
+                print(ImpactEffect.isPlaying);
+                ImpactEffect.Stop();
+                print(ImpactEffect.isPlaying);
+                ImpactEffect.Play();
+                print(ImpactEffect.isPlaying);
                 direction.x *= -1;
+                if (lastHitPaddle == null)
+                    Instantiate(ThemeManager.Instance.Theme.BallEffect, transform);
                 lastHitPaddle = collision.gameObject;
                 break;
             case "Border":
                 SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.WallHit);
+                ImpactEffect.Stop();
+                ImpactEffect.Play();
                 direction.y *= -1;
                 break;
             case "Goal":
                 SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.Goal);
+                GoalEffect.Stop();
+                GoalEffect.Play();
                 BallSpawner.Instance.SpawnBall(gameObject);
                 break;
             default:

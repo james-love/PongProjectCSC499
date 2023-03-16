@@ -30,7 +30,10 @@ public class BallSpawner : MonoBehaviour
 
         GameObject newBall = Instantiate(ball);
 
-        newBall.AddComponent<Ball>();
+        Ball ballObj = newBall.AddComponent<Ball>();
+
+        ballObj.ImpactEffect = ThemeManager.Instance.Theme.CollisionEffect;
+        ballObj.GoalEffect = ThemeManager.Instance.Theme.GoalEffect;
 
         newBall.transform.position = transform.position;
     }
