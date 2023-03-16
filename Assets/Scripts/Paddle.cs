@@ -24,7 +24,7 @@ public class Paddle : MonoBehaviour
         collisionEffect = GetComponentInChildren<ParticleSystem>();
         collisionEffect.transform.rotation = Quaternion.Euler(new Vector3(
             collisionEffect.transform.rotation.x,
-            90,
+            rotate ? 90 : -90,
             collisionEffect.transform.rotation.z));
     }
 

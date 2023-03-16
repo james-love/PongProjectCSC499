@@ -26,6 +26,8 @@ public class Ball : MonoBehaviour
             case "Paddle":
                 SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.PaddleHit);
                 direction.x *= -1;
+                if (lastHitPaddle == null)
+                    Instantiate(ThemeManager.Instance.Theme.BallEffect, transform);
                 lastHitPaddle = collision.gameObject;
                 break;
             case "Border":
