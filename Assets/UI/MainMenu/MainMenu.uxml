@@ -4,7 +4,7 @@
     <ui:VisualElement name="Container" class="container" style="background-color: rgb(31, 20, 18);">
         <ui:VisualElement name="Container2" class="container" style="background-color: rgb(255, 225, 78); height: 815px; width: 1054px;">
             <ui:Label text="Pong" display-tooltip-when-elided="true" name="Title" class="title" style="background-color: rgba(0, 0, 0, 0); color: rgb(0, 0, 0);" />
-            <ui:VisualElement name="Container3" class="container" style="background-color: rgb(82, 50, 27); height: 427px; width: 664px;">
+            <ui:VisualElement name="Container3" class="container" style="background-color: rgb(82, 50, 27); height: 427px; width: 664px; background-image: url(&apos;project://database/Assets/MiscSprites&amp;Mat/6464298.jpg?fileID=2800000&amp;guid=49851001121d24fc6804b04a4fffa6e8&amp;type=3#6464298&apos;);">
                 <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
                 <ui:Button text="Controls" display-tooltip-when-elided="true" name="Controls" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
                 <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
