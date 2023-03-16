@@ -38,7 +38,7 @@ public class LevelState : MonoBehaviour
         Powerup = newValue == Powerups.Enable;
     }
 
-    public void MainMenu()
+    public void ReloadMainMenu()
     {
         Theme = Theme.Classic;
         Players = Players.OnePlayer;
@@ -46,7 +46,20 @@ public class LevelState : MonoBehaviour
         Score = 7;
         Powerup = true;
 
+        Destroy(BallSpawner.Instance.gameObject);
+        Destroy(PowerupSpawner.Instance.gameObject);
+        Destroy(ThemeManager.Instance.gameObject);
+
         LoadLevel(0);
+    }
+
+    public void ReloadGame()
+    {
+        Destroy(BallSpawner.Instance.gameObject);
+        Destroy(PowerupSpawner.Instance.gameObject);
+        Destroy(ThemeManager.Instance.gameObject);
+
+        LoadLevel(1);
     }
 
     public void LoadLevel(int levelIndex)
