@@ -15,15 +15,20 @@ public class ControlsMenuNavigation : MonoBehaviour
         Button playerTwoUpReset = root.Query<VisualElement>("PlayerTwo").Descendents<VisualElement>("RebindUp").Descendents<Button>("Reset");
         Button playerTwoDownRebind = root.Query<VisualElement>("PlayerTwo").Descendents<VisualElement>("RebindDown").Descendents<Button>("Rebind");
         Button playerTwoDownReset = root.Query<VisualElement>("PlayerTwo").Descendents<VisualElement>("RebindDown").Descendents<Button>("Reset");
+        Button pauseRebind = root.Query<VisualElement>("RebindPause").Descendents<Button>("Rebind");
+        Button pauseReset = root.Query<VisualElement>("RebindPause").Descendents<Button>("Reset");
 
-        Navigation.OverrideNavigation(back, null, playerOneUpRebind, null, playerOneUpRebind);
-        Navigation.OverrideNavigation(playerOneUpRebind, back, playerOneUpReset, back, playerOneDownRebind);
-        Navigation.OverrideNavigation(playerOneUpReset, playerOneUpRebind, playerTwoUpRebind, back, playerOneDownReset);
+        Navigation.OverrideNavigation(back, null, pauseRebind, null, pauseRebind);
+        Navigation.OverrideNavigation(playerOneUpRebind, back, playerOneUpReset, pauseRebind, playerOneDownRebind);
+        Navigation.OverrideNavigation(playerOneUpReset, playerOneUpRebind, playerTwoUpRebind, pauseReset, playerOneDownReset);
         Navigation.OverrideNavigation(playerOneDownRebind, back, playerOneDownReset, playerOneUpRebind);
         Navigation.OverrideNavigation(playerOneDownReset, playerOneDownRebind, playerTwoDownRebind, playerOneUpReset);
-        Navigation.OverrideNavigation(playerTwoUpRebind, playerOneUpReset, playerTwoUpReset, back, playerTwoDownRebind);
-        Navigation.OverrideNavigation(playerTwoUpReset, playerTwoUpRebind, null, back, playerTwoDownReset);
+        Navigation.OverrideNavigation(playerTwoUpRebind, playerOneUpReset, playerTwoUpReset, pauseReset, playerTwoDownRebind);
+        Navigation.OverrideNavigation(playerTwoUpReset, playerTwoUpRebind, null, pauseReset, playerTwoDownReset);
         Navigation.OverrideNavigation(playerTwoDownRebind, playerOneDownReset, playerTwoDownReset, playerTwoUpRebind);
         Navigation.OverrideNavigation(playerTwoDownReset, playerTwoDownRebind, null, playerTwoUpReset);
+
+        Navigation.OverrideNavigation(pauseRebind, back, pauseReset, back, playerOneUpRebind);
+        Navigation.OverrideNavigation(pauseReset, pauseRebind, playerTwoUpRebind, back, playerOneUpReset);
     }
 }

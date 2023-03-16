@@ -474,6 +474,7 @@ GameObject:
   - component: {fileID: 542481990}
   - component: {fileID: 542481989}
   - component: {fileID: 542481988}
+  - component: {fileID: 542481991}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -493,6 +494,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3cec9bf9e336b42b0a888814ed877e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  muteMusicIcon: {fileID: -420723529, guid: 0853c7fb22c47a54fa25de71431a1f3d, type: 3}
+  unMuteMusicIcon: {fileID: -1405792293, guid: 0853c7fb22c47a54fa25de71431a1f3d, type: 3}
+  muteSFXIcon: {fileID: -1409823703, guid: 0853c7fb22c47a54fa25de71431a1f3d, type: 3}
+  unMuteSFXIcon: {fileID: -306024593, guid: 0853c7fb22c47a54fa25de71431a1f3d, type: 3}
+  clickSound: {fileID: 8300000, guid: 4b1010eb15fcc84439f26c4cc0945b56, type: 3}
+  navigationSound: {fileID: 8300000, guid: e23c1c85c360d9d4c964bf948bc69dde, type: 3}
 --- !u!114 &542481989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,6 +531,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542481991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542481987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f104844d1a71f468e28b3dda004889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &551069294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,7 +1516,7 @@ MonoBehaviour:
     PaddleHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
     Goal: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
     WallHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Music: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    Music: {fileID: 8300000, guid: f99d5a7af57a2634bab06edd4342ec21, type: 3}
     PowerupPickup: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
   - Theme: 1
     Background: {fileID: 35089469, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
@@ -1510,11 +1529,11 @@ MonoBehaviour:
     UnoReversePowerup: {fileID: -2096122821, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
     GrowPaddlePowerup: {fileID: 597093295, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
     ShrinkPaddlePowerup: {fileID: 1052119511, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
-    PaddleHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Goal: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    WallHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Music: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    PowerupPickup: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    PaddleHit: {fileID: 8300000, guid: 96c67ca281a38504c85b10fe948813e6, type: 3}
+    Goal: {fileID: 8300000, guid: eab223d68137d204c95b50370c47b44c, type: 3}
+    WallHit: {fileID: 8300000, guid: 96c67ca281a38504c85b10fe948813e6, type: 3}
+    Music: {fileID: 8300000, guid: f99d5a7af57a2634bab06edd4342ec21, type: 3}
+    PowerupPickup: {fileID: 8300000, guid: c307e4e71459dc2488e1dfb591df498d, type: 3}
   - Theme: 3
     Background: {fileID: -1950912366, guid: 73f8a9c2e718d6a44987296919008234, type: 3}
     Ball: {fileID: 1273901894, guid: 73f8a9c2e718d6a44987296919008234, type: 3}
@@ -1529,7 +1548,7 @@ MonoBehaviour:
     PaddleHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
     Goal: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
     WallHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Music: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    Music: {fileID: 8300000, guid: f99d5a7af57a2634bab06edd4342ec21, type: 3}
     PowerupPickup: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
   - Theme: 2
     Background: {fileID: 1917532279, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
@@ -1542,10 +1561,10 @@ MonoBehaviour:
     UnoReversePowerup: {fileID: -934528105, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     GrowPaddlePowerup: {fileID: -357867440, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     ShrinkPaddlePowerup: {fileID: -160999919, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
-    PaddleHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Goal: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    WallHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Music: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    PaddleHit: {fileID: 8300000, guid: 3347d8a2bac42874f914077ac69aa987, type: 3}
+    Goal: {fileID: 8300000, guid: c137dfc69ab880242921d6c3d62a596b, type: 3}
+    WallHit: {fileID: 8300000, guid: 3347d8a2bac42874f914077ac69aa987, type: 3}
+    Music: {fileID: 8300000, guid: d4c7d25724d64c54c99b8f9a88d260db, type: 3}
     PowerupPickup: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
   background: {fileID: 1668119118}
   ball: {fileID: 551069296}
@@ -2493,6 +2512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad75ff4ecf980e4f910faec54760b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 4b1010eb15fcc84439f26c4cc0945b56, type: 3}
+  navigationSound: {fileID: 8300000, guid: e23c1c85c360d9d4c964bf948bc69dde, type: 3}
 --- !u!114 &1673801201
 MonoBehaviour:
   m_ObjectHideFlags: 0

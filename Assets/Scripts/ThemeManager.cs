@@ -55,6 +55,8 @@ public class ThemeManager : MonoBehaviour
 
             shrinkPowerup.sprite = themes[themeIndex].ShrinkPaddlePowerup;
             shrinkPowerup.gameObject.AddComponent<PolygonCollider2D>();
+
+            SoundManager.Instance.PlayMusic(themes[themeIndex].Music);
         }
         else
         {

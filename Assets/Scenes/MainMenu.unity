@@ -169,7 +169,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -567,8 +567,9 @@ MonoBehaviour:
   controlsMenu: {fileID: 340131087}
   backSound: {fileID: 8300000, guid: 493a64d7afa65bc4a9e372bf0d6b8d22, type: 3}
   forwardSound: {fileID: 8300000, guid: 7d0c9f10eaa51e84ba22d8609f28b94a, type: 3}
-  navigationSound: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-  clickSound: {fileID: 8300000, guid: 2a046dcd14e2bc44187058365d8f1f43, type: 3}
+  navigationSound: {fileID: 8300000, guid: e23c1c85c360d9d4c964bf948bc69dde, type: 3}
+  clickSound: {fileID: 8300000, guid: 4b1010eb15fcc84439f26c4cc0945b56, type: 3}
+  menuMusic: {fileID: 8300000, guid: c12f9a8462299634695ea597317e676b, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 34451404}
   effectsSource: {fileID: 914255114}
-  navigationSound: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+  navigationSound: {fileID: 8300000, guid: e23c1c85c360d9d4c964bf948bc69dde, type: 3}
 --- !u!1 &1424812750
 GameObject:
   m_ObjectHideFlags: 0

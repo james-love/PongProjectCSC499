@@ -1,34 +1,48 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/ControlsMenu/ControlsMenu.uss?fileID=7433441132597879392&amp;guid=4fc7ee0b5965af7489a527aa3fe467a0&amp;type=3#ControlsMenu" />
     <Style src="project://database/Assets/UI/Shared.uss?fileID=7433441132597879392&amp;guid=cb6779ee601200d4b8369d036a657663&amp;type=3#Shared" />
-    <ui:VisualElement name="Container" class="container" style="background-color: rgb(255, 225, 78);">
-        <ui:VisualElement name="LeftColumn" class="column" style="background-color: rgb(82, 50, 27);">
-            <ui:VisualElement name="PlayerOne" class="control" style="font-size: 34px;">
-                <ui:Label text="Player One" display-tooltip-when-elided="true" name="Label" class="settings-label" />
-                <ui:VisualElement name="RebindUp" class="rebind" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);">
-                    <ui:Label text="Up" display-tooltip-when-elided="true" name="Label" />
-                    <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="1" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
-                    <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="2" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
-                </ui:VisualElement>
-                <ui:VisualElement name="RebindDown" class="rebind">
-                    <ui:Label text="Down" display-tooltip-when-elided="true" name="Label" />
-                    <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="3" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
-                    <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="4" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+    <ui:VisualElement name="Container" class="container" style="background-color: rgb(255, 225, 78); flex-direction: column;">
+        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/MiscSprites&amp;Mat/6464298.jpg?fileID=2800000&amp;guid=49851001121d24fc6804b04a4fffa6e8&amp;type=3#6464298&apos;);">
+            <ui:VisualElement>
+                <ui:VisualElement class="control" style="font-size: 34px; margin-bottom: 150px;">
+                    <ui:Label text="Menu" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                    <ui:VisualElement name="RebindPause" class="rebind">
+                        <ui:Label text="Pause" display-tooltip-when-elided="true" name="Label" />
+                        <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="5" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                        <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="6" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                    </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-        </ui:VisualElement>
-        <ui:VisualElement name="RightColumn" class="column" style="background-color: rgb(82, 50, 27);">
-            <ui:VisualElement name="PlayerTwo" class="control" style="font-size: 34px;">
-                <ui:Label text="Player Two" display-tooltip-when-elided="true" name="Label" class="settings-label" />
-                <ui:VisualElement name="RebindUp" class="rebind">
-                    <ui:Label text="Up" display-tooltip-when-elided="true" name="Label" />
-                    <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="5" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
-                    <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="6" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+            <ui:VisualElement style="width: 100%; height: 100%; flex-direction: row;">
+                <ui:VisualElement name="LeftColumn" class="column">
+                    <ui:VisualElement name="PlayerOne" class="control" style="font-size: 34px;">
+                        <ui:Label text="Player One" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                        <ui:VisualElement name="RebindUp" class="rebind" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);">
+                            <ui:Label text="Up" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="1" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                            <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="2" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="RebindDown" class="rebind">
+                            <ui:Label text="Down" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="3" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                            <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="4" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="RebindDown" class="rebind">
-                    <ui:Label text="Down" display-tooltip-when-elided="true" name="Label" />
-                    <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="7" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
-                    <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="8" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                <ui:VisualElement name="RightColumn" class="column">
+                    <ui:VisualElement name="PlayerTwo" class="control" style="font-size: 34px;">
+                        <ui:Label text="Player Two" display-tooltip-when-elided="true" name="Label" class="settings-label" />
+                        <ui:VisualElement name="RebindUp" class="rebind">
+                            <ui:Label text="Up" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="5" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                            <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="6" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="RebindDown" class="rebind">
+                            <ui:Label text="Down" display-tooltip-when-elided="true" name="Label" />
+                            <ui:Button text="W" display-tooltip-when-elided="true" name="Rebind" tabindex="7" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                            <ui:Button display-tooltip-when-elided="true" name="Reset" tabindex="8" class="button" style="background-color: rgb(152, 105, 72); border-left-color: rgb(31, 20, 18); border-right-color: rgb(31, 20, 18); border-top-color: rgb(31, 20, 18); border-bottom-color: rgb(31, 20, 18);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

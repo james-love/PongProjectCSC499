@@ -3,13 +3,16 @@
     <Style src="project://database/Assets/UI/Shared.uss?fileID=7433441132597879392&amp;guid=cb6779ee601200d4b8369d036a657663&amp;type=3#Shared" />
     <ui:VisualElement name="Container" class="container" style="background-color: rgba(65, 65, 65, 0.58);">
         <ui:Label text="Paused" display-tooltip-when-elided="true" name="Text" class="text" />
-        <ui:Button text="Resume" display-tooltip-when-elided="true" name="Resume" class="button resume-button" style="width: 348px; height: 115px; margin-left: 0; margin-right: 0; margin-top: 63px; margin-bottom: 0;" />
+        <ui:Button text="Resume" display-tooltip-when-elided="true" name="Resume" class="button pause-menu-buttons" />
+        <ui:Button text="Reload" display-tooltip-when-elided="true" name="Reload" tabindex="1" class="button pause-menu-buttons" />
+        <ui:Button text="Main Menu" display-tooltip-when-elided="true" name="MainMenu" tabindex="2" class="button pause-menu-buttons" />
+        <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" tabindex="3" class="button pause-menu-buttons" />
     </ui:VisualElement>
-    <ui:VisualElement name="VolumeControls" class="volume-control" style="display: none;">
+    <ui:VisualElement name="VolumeControls" class="volume-control">
         <ui:VisualElement name="MuteButtons" class="mute-button-container">
-            <ui:Button display-tooltip-when-elided="true" name="MuteMusic" tabindex="2" class="button mute-button" style="background-image: url(&apos;project://database/Assets/UI/GraphicsAndFont/arrow.png?fileID=2800000&amp;guid=0390bb330e321d844a24c53235879170&amp;type=3#arrow&apos;);" />
-            <ui:Button display-tooltip-when-elided="true" name="MuteSFX" tabindex="1" class="button mute-button" style="background-image: url(&apos;project://database/Assets/UI/GraphicsAndFont/arrow.png?fileID=2800000&amp;guid=0390bb330e321d844a24c53235879170&amp;type=3#arrow&apos;);" />
+            <ui:Button display-tooltip-when-elided="true" name="MuteMusic" tabindex="4" class="button mute-button" style="background-image: url(&apos;project://database/Assets/UI/GraphicsAndFont/arrow.png?fileID=2800000&amp;guid=0390bb330e321d844a24c53235879170&amp;type=3#arrow&apos;);" />
+            <ui:Button display-tooltip-when-elided="true" name="MuteSFX" tabindex="5" class="button mute-button" style="background-image: url(&apos;project://database/Assets/UI/GraphicsAndFont/arrow.png?fileID=2800000&amp;guid=0390bb330e321d844a24c53235879170&amp;type=3#arrow&apos;);" />
         </ui:VisualElement>
-        <ui:Slider picking-mode="Ignore" value="0.5" high-value="1" name="VolumeLevel" tabindex="3" class="volume-slider" />
+        <ui:Slider picking-mode="Ignore" value="0.5" high-value="1" name="VolumeLevel" tabindex="6" class="volume-slider" />
     </ui:VisualElement>
 </ui:UXML>

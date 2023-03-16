@@ -5,5 +5,6 @@
         <ui:Label text="End Text!" display-tooltip-when-elided="true" name="EndText" class="end-text" style="font-size: 143px; color: rgba(255, 255, 255, 255);" />
         <ui:Button text="Play Again" display-tooltip-when-elided="true" name="PlayAgain" class="button" />
         <ui:Button text="Main Menu" display-tooltip-when-elided="true" name="MainMenu" class="button" />
+        <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" />
     </ui:VisualElement>
 </ui:UXML>

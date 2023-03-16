@@ -14,6 +14,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private AudioClip navigationSound;
     [SerializeField] private AudioClip clickSound;
 
+    [SerializeField] private AudioClip menuMusic;
+
     private void Awake()
     {
         Button start = mainMenu.rootVisualElement.Q<Button>("Start");
@@ -41,6 +43,11 @@ public class MainMenu : MonoBehaviour
         mainMenu.rootVisualElement.style.display = DisplayStyle.Flex;
 
         AddNavigationSound();
+    }
+
+    private void Start()
+    {
+        SoundManager.Instance.PlayMusic(menuMusic);
     }
 
     private void AddNavigationSound()

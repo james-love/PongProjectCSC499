@@ -19,6 +19,8 @@ public class ControlsMenu : MonoBehaviour
         int p2Up = p2Move.bindings.IndexOf(b => b.name == "positive");
         int p2Down = p2Move.bindings.IndexOf(b => b.name == "negative");
 
+        InputAction pause = inputs.FindAction("Players/Pause");
+
         VisualElement rebindPlayerOneUp = root.Query<VisualElement>("PlayerOne").Descendents<VisualElement>("RebindUp");
         new RebindControl(rebindPlayerOneUp, p1Move, p1Up, overlay);
 
@@ -30,6 +32,9 @@ public class ControlsMenu : MonoBehaviour
 
         VisualElement rebindPlayerTwoDown = root.Query<VisualElement>("PlayerTwo").Descendents<VisualElement>("RebindDown");
         new RebindControl(rebindPlayerTwoDown, p2Move, p2Down, overlay);
+
+        VisualElement rebindPause = root.Query<VisualElement>("RebindPause");
+        new RebindControl(rebindPause, pause, 0, overlay);
     }
 
     private void OnEnable()
