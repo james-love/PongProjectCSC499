@@ -1513,11 +1513,11 @@ MonoBehaviour:
     UnoReversePowerup: {fileID: -2102977344, guid: 82337a8486a954d409a99d945323a5c7, type: 3}
     GrowPaddlePowerup: {fileID: 45904246, guid: 82337a8486a954d409a99d945323a5c7, type: 3}
     ShrinkPaddlePowerup: {fileID: 1599515746, guid: 82337a8486a954d409a99d945323a5c7, type: 3}
-    PaddleHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    PaddleHit: {fileID: 8300000, guid: f76d2813f8c0270419461c435ca40313, type: 3}
     Goal: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    WallHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Music: {fileID: 8300000, guid: f99d5a7af57a2634bab06edd4342ec21, type: 3}
-    PowerupPickup: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    WallHit: {fileID: 8300000, guid: f76d2813f8c0270419461c435ca40313, type: 3}
+    Music: {fileID: 0}
+    PowerupPickup: {fileID: 8300000, guid: d598e1bd6f1406546bf0ed291e0d51ac, type: 3}
   - Theme: 1
     Background: {fileID: 35089469, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
     Ball: {fileID: 1046554316, guid: fcdb2c05cb261184e8e4978c7325fab6, type: 3}
@@ -1545,11 +1545,11 @@ MonoBehaviour:
     UnoReversePowerup: {fileID: 1005633331, guid: 73f8a9c2e718d6a44987296919008234, type: 3}
     GrowPaddlePowerup: {fileID: 1308757356, guid: 73f8a9c2e718d6a44987296919008234, type: 3}
     ShrinkPaddlePowerup: {fileID: -1841803426, guid: 73f8a9c2e718d6a44987296919008234, type: 3}
-    PaddleHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Goal: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    WallHit: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
-    Music: {fileID: 8300000, guid: f99d5a7af57a2634bab06edd4342ec21, type: 3}
-    PowerupPickup: {fileID: 8300000, guid: 3304f22489b1f994e93904609380c6a7, type: 3}
+    PaddleHit: {fileID: 8300000, guid: 9f9b9d4d19b35e54ea3af9b07720289a, type: 3}
+    Goal: {fileID: 8300000, guid: dd0209982eb1df44796b3a2192044166, type: 3}
+    WallHit: {fileID: 8300000, guid: 9f9b9d4d19b35e54ea3af9b07720289a, type: 3}
+    Music: {fileID: 8300000, guid: 9c7701c6749c2c341b001b03447ddc0e, type: 3}
+    PowerupPickup: {fileID: 8300000, guid: 9dc18f8e69875a74aa6fd4c34a637e56, type: 3}
   - Theme: 2
     Background: {fileID: 1917532279, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}
     Ball: {fileID: 1142926258, guid: 0ffa0c0061d1de34192d3f505941e3af, type: 3}

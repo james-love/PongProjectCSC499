@@ -40,21 +40,27 @@ public class ThemeManager : MonoBehaviour
 
             fastPowerup.sprite = themes[themeIndex].FastballPowerup;
             fastPowerup.gameObject.AddComponent<PolygonCollider2D>();
+            fastPowerup.gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
 
             slowPowerup.sprite = themes[themeIndex].SlowballPowerup;
             slowPowerup.gameObject.AddComponent<PolygonCollider2D>();
+            slowPowerup.gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
 
             invisiballPowerup.sprite = themes[themeIndex].InvisiballPowerup;
             invisiballPowerup.gameObject.AddComponent<PolygonCollider2D>();
+            invisiballPowerup.gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
 
             reversePowerup.sprite = themes[themeIndex].UnoReversePowerup;
             reversePowerup.gameObject.AddComponent<PolygonCollider2D>();
+            reversePowerup.gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
 
             growPowerup.sprite = themes[themeIndex].GrowPaddlePowerup;
             growPowerup.gameObject.AddComponent<PolygonCollider2D>();
+            growPowerup.gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
 
             shrinkPowerup.sprite = themes[themeIndex].ShrinkPaddlePowerup;
             shrinkPowerup.gameObject.AddComponent<PolygonCollider2D>();
+            shrinkPowerup.gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
 
             SoundManager.Instance.PlayMusic(themes[themeIndex].Music);
         }

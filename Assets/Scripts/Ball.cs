@@ -36,17 +36,18 @@ public class Ball : MonoBehaviour
                 SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.Goal);
                 BallSpawner.Instance.SpawnBall(gameObject);
                 break;
-            case "Powerup":
-                if (lastHitPaddle != null)
-                {
-                    SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.PowerupPickup);
-                    PowerupEffect.GenerateEffect(collision.gameObject.GetComponent<Powerup>().PowerupType, gameObject, lastHitPaddle);
-                    PowerupSpawner.Instance.SpawnPowerup(collision.gameObject);
-                }
-
-                break;
             default:
                 break;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Powerup") && lastHitPaddle != null)
+        {
+            SoundManager.Instance.PlaySound(ThemeManager.Instance.Theme.PowerupPickup);
+            PowerupEffect.GenerateEffect(collider.gameObject.GetComponent<Powerup>().PowerupType, gameObject, lastHitPaddle);
+            PowerupSpawner.Instance.SpawnPowerup(collider.gameObject);
         }
     }
 }
