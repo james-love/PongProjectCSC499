@@ -35,8 +35,14 @@ public class ThemeManager : MonoBehaviour
             leftPaddle.sprite = themes[themeIndex].LeftPaddle;
             leftPaddle.gameObject.AddComponent<PolygonCollider2D>();
 
+            Instantiate(themes[themeIndex].CollisionEffect, leftPaddle.transform);
+            leftPaddle.gameObject.GetComponent<Paddle>().GetParticleSystem(true);
+
             rightPaddle.sprite = themes[themeIndex].RightPaddle;
             rightPaddle.gameObject.AddComponent<PolygonCollider2D>();
+
+            Instantiate(themes[themeIndex].CollisionEffect, rightPaddle.transform);
+            rightPaddle.gameObject.GetComponent<Paddle>().GetParticleSystem(false);
 
             fastPowerup.sprite = themes[themeIndex].FastballPowerup;
             fastPowerup.gameObject.AddComponent<PolygonCollider2D>();
@@ -95,7 +101,7 @@ public class ThemeManager : MonoBehaviour
         public AudioClip PowerupPickup;
         public GameObject VolumePrefab;
         public GameObject BallEffect;
-        public ParticleSystem GoalEffect;
-        public ParticleSystem CollisionEffect;
+        public GameObject GoalEffect;
+        public GameObject CollisionEffect;
     }
 }

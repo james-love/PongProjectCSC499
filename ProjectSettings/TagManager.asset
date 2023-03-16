@@ -8,6 +8,7 @@ TagManager:
   - Border
   - Goal
   - Powerup
+  - Ball
   layers:
   - Default
   - TransparentFX
