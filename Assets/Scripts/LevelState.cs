@@ -38,6 +38,17 @@ public class LevelState : MonoBehaviour
         Powerup = newValue == Powerups.Enable;
     }
 
+    public void MainMenu()
+    {
+        Theme = Theme.Classic;
+        Players = Players.OnePlayer;
+        Mode = GameMode.Endless;
+        Score = 7;
+        Powerup = true;
+
+        LoadLevel(0);
+    }
+
     public void LoadLevel(int levelIndex)
     {
         StartCoroutine(LoadAsync(levelIndex));

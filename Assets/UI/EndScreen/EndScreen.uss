@@ -1,0 +1,15 @@
+.container {
+    background-color: rgba(123, 123, 123, 0.63);
+}
+
+.end-text {
+}
+
+.button {
+    font-size: 85px;
+    width: 475px;
+    margin-bottom: 0;
+    margin-top: 35px;
+    color: rgba(0, 0, 0, 255);
+    height: 115px;
+}

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/EndScreen/EndScreen.uss?fileID=7433441132597879392&amp;guid=abf7d0a7afe4b1b4caa44a878c7dc165&amp;type=3#EndScreen" />
+    <Style src="project://database/Assets/UI/Shared.uss?fileID=7433441132597879392&amp;guid=cb6779ee601200d4b8369d036a657663&amp;type=3#Shared" />
+    <ui:VisualElement name="Container" class="container" style="align-items: center; justify-content: center; background-color: rgba(65, 65, 65, 0.58);">
+        <ui:Label text="End Text!" display-tooltip-when-elided="true" name="EndText" class="end-text" style="font-size: 143px; color: rgba(255, 255, 255, 255);" />
+        <ui:Button text="Play Again" display-tooltip-when-elided="true" name="PlayAgain" class="button" />
+        <ui:Button text="Main Menu" display-tooltip-when-elided="true" name="MainMenu" class="button" />
+    </ui:VisualElement>
+</ui:UXML>

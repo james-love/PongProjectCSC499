@@ -1,0 +1,49 @@
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-size: 150px;
+    color: rgba(255, 255, 255, 255);
+}
+
+.button {
+    font-size: 80px;
+    color: rgba(0, 0, 0, 255);
+}
+
+.volume-control {
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    flex-direction: column;
+}
+
+.resume-button {
+}
+
+.mute-button {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+
+.volume-slider {
+    justify-content: center;
+}
+
+.mute-button-container {
+    flex-direction: row;
+    margin-bottom: 54px;
+}
+
+.volume-slider #unity-drag-container {
+    height: 100px;
+}
+
+.volume-slider #unity-dragger {
+    /*margin-top: -50px;*/
+    height: 100px;
+    width: 20px;
+}
